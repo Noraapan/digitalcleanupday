@@ -1,5 +1,15 @@
 ---
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full z-10 bg-white" >
+    <div id="navbar" class="flex flex-row justify-between">
+    <div id="logo" class="">
+    <img src="" alt="">
+    </div>
+    <nav id="desktopmenu" class="hidden lg:block">
+    <ul class="flex flex-row gap-4">
+    <li class=""><a href="#registrer">REGISTRER</a></li>
+    <li class=""><a href="#ressourcer">RESSOURCER</a></li>
+    <li class=""><a href="#howto">HOW TO</a>
+    </li>
+    </ul>
+    </nav>
