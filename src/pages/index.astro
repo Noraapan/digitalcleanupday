@@ -8,7 +8,9 @@ import Knap from "../components/Knap.astro";
 <h1>DIGITAL CLEANUP DAY</h1>
 <h3>15. MARTS 2025</h3>  
 <Knap variant="primary" size="medium">REGISTRER DIT BIDRAG!</Knap>
-<div class="flex flex-row justify-center pt-4"><h4 class="pr-4">SAVE THE DATE</h4> <img src="kalender.svg" alt="kalender" class="hover:opacity-50"></div>
+<div class="flex flex-row justify-center pt-4">
+    <h4 class="pr-4">SAVE THE DATE</h4> <img src="kalender.svg" alt="kalender" class="hover:opacity-50">
+</div>
 </section>
 <article class="mx-5">
     <section class="sm:grid grid-cols-2 lg:ml-28">
@@ -21,29 +23,40 @@ import Knap from "../components/Knap.astro";
     </div>
     <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0"><img src="people.svg" alt="people"></div>
     </section>
-
-    <section class=" grid grid-cols-2  md:flex flex-row">
-        <div class="p-3">
-            <img src="money.svg" alt="pengar" class="w-3/5 lg:w-auto pb-4">
-            <p>Øger serverkapaciteten og reducerer omkostninger.</p>
-        </div>
-        <div class="p-3">
-            <img src="share.svg" alt="dela" class="w-3/5 lg:w-auto pb-4">
-            <p>Fremskynder deling og søgning af information.</p>
-        </div>
-        <div class="p-3">
-            <img src="lock.svg" alt="security" class="w-4/5 lg:w-auto pb-4">
-            <p>Reducerer sikkerhedsrisici for datalagring</p>
-        </div>
-        <div class="p-3">
-            <img src="devices.svg" alt="devices" class="w-4/5 lg:w-auto pb-4">
-            <p>Forlænger dine enheders levetid.</p>
-        </div>
-        <div class="p-3">
-            <img src="co2.svg" alt="co2" class="w-4/5 lg:w-auto pb-4">
-            <p>Hjælper med at reducere CO2-udledning.</p>
-        </div>
-    </section>
+            <h2>Hvorfor rydde op i det digitale rod?</h2>
+            <section class="text-center">
+                <div class="grid grid-cols-2 md:flex flex-row">
+                    <div class="p-3 flex flex-col items-center">
+                        <img src="money.svg" alt="pengar" class="w-[45%] lg:w-auto">
+                        <p>Øger serverkapaciteten og reducerer omkostninger</p>
+                    </div>
+                    <div class="p-3 flex flex-col items-center">
+                        <img src="share.svg" alt="dela" class="w-[45%] lg:w-auto">
+                        <p>Fremskynder deling og søgning af information</p>
+                    </div>
+                    <div class="p-3 flex flex-col items-center">
+                        <img src="lock.svg" alt="security" class="w-[45%] lg:w-auto">
+                        <p>Reducerer sikkerhedsrisici for datalagring</p>
+                    </div>
+                    <div class="p-3 flex flex-col items-center">
+                        <img src="devices.svg" alt="devices" class="w-[45%] lg:w-auto">
+                        <p>Forlænger dine enheders levetid</p>
+                    </div>
+                    <div class="p-3 flex flex-col items-center">
+                        <img src="co2.svg" alt="co2" class="w-[45%] lg:w-auto">
+                        <p>Hjælper med at reducere CO2-udledning</p>
+                    </div>
+                </div>
+            </section>
+<section class="grid md:grid-cols-2 ">
+   <div class="order-last pt-14 pl-10 md:order-first md:pt-44 md:pl-0 sm:pt-28 lg:pt-40"><img src="mobiler.svg" alt="telefoner"></div>
+    <div>
+        <h4>PROBLEMET</h4>
+        <h2>MED DIGITALT SKRALD</h2>
+        <p class="py-4">At udføre en digital oprydning er ikke kun en praktisk handling for at organisere dit digitale liv – det er også et skridt mod øget personlig effektivitet og en vigtig indsats for miljøet. Når du fjerner unødvendige data, bliver det lettere at håndtere og finde information, hvilket forbedrer dit arbejdsgang og sparer tid. Et velorganiseret digitalt miljø gør det også nemmere at dele information og reducerer stress over rod.</p>
+        <p>Men digital oprydning er ikke kun godt for din egen produktivitet. Det har også en positiv indvirkning på miljøet. Opbevaring og overførsel af data kræver store mængder energi, hvilket fører til CO2-udslip. Ved at fjerne gammel og overflødig data kan du reducere behovet for energi og dermed hjælpe med at sænke de samlede udslip fra datacentre og servere.</p>
+    
+    </div></section>
 </article>
 
 </MainLayout>
