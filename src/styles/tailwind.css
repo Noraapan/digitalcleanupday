@@ -2,11 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/***** resert  */
 @layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    /* --font_body: "Roboto", sans-serif; */
+    /* --font_header: "League Spartan", sans-serif; */
+
+    --font_size_large: 1.4rem;
+    --font_size_medium: 1.125rem;
+    --font_size_regular: 1.18rem;
+    --font_size_small: 0.812rem;
+    --font_size_tiny: 0.688rem;
+
+    --color_green: #a7bd96;
+    --color_darkgreen: #072811;
+    --color_lightgrey: #d9d5d5;
+    --color_peach: #eb9264;
+  }
+
   html {
     font-family: Helvetica, sans-serif;
-    --lightgreen: "#a7bd96";
-    --green: "#072811";
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  html,
+  body {
+    scroll-behavior: smooth;
   }
   h1 {
     font-size: 90px;
