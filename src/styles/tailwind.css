@@ -34,6 +34,7 @@
   html,
   body {
     scroll-behavior: smooth;
+    color: var(--color_darkgreen);
   }
 
   h1,
@@ -58,14 +59,15 @@
     font-weight: bold;
   }
   h3 {
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     font-weight: bold;
+    padding-bottom: 1rem;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   h5 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   p,
@@ -83,9 +85,6 @@
     transition: all 0.55s ease;
   }
 }
-
-/* ___________________________ TABLET  ___________________________*/
-/* reglerne gælder når skærmen er minimum 768px */
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -99,7 +98,7 @@
     padding-bottom: 30px;
   }
   h4 {
-    font-size: 1.65rem;
+    font-size: 1.4rem;
   }
   h5 {
     font-size: 1.3rem;
@@ -113,7 +112,6 @@
   }
 }
 
-/* ___________________________ DESKTOP  ___________________________*/
 @media screen and (min-width: 1024px) {
   section {
     margin-inline: 40px;
@@ -130,12 +128,11 @@
     font-weight: bold;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
   }
   h4 {
     font-size: 2rem;
-    font-weight: bold;
   }
   h5 {
     font-size: 1.7rem;
