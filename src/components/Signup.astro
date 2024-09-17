@@ -5,183 +5,207 @@
 <main class="sign_up_page_main">
   <div class="wrapper-contact">
     <form class="Contact contact-box" name="Contact">
-      <h1>Sign up!</h1>
-      <p>Register your contribution!</p>
+      <h1 class="text-lg">Registrer din digitale oprydning</h1>
 
-      <label for="name">Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Peter Parker, Bruce Wayne..."
-      />
+      <label for="name">Navn</label>
+      <input type="text" id="name" name="name" placeholder="Greta Thunberg" />
 
       <label for="email">Email</label>
       <input
         type="email"
         id="email"
         name="email"
-        placeholder="Maybe spiderman@email.com?"
+        placeholder="Måske green@email.com?"
       />
 
-      <label for="School">School</label>
-      <input
-        type="text"
-        id="School"
-        name="School"
-        placeholder="i.e. Hogwarts!"
-      />
+      <label for="Country">Land</label>
+      <input type="text" id="School" name="School" placeholder="Denmark?" />
 
-      <label for="uni-login">Uni-Login</label>
+      <label for="organization name">Organisationsnavn (valgfrit)</label>
       <!-- Rettet label-tag -->
       <input
         type="text"
         id="uni-login"
         name="uni-login"
-        placeholder="i.e. Diba001 or Sar0003"
+        placeholder=" GoGreen AS?"
       />
 
-      <label for="photo">Add a picture to personalize your account!</label>
-      <input
-        class="photo_upload_button"
-        type="file"
-        id="photo"
-        name="photo"
-        accept="image/*"
-      />
+      <label for="amount"> Antall deltagere</label>
+      <div
+        data-v-7d0e8d10=""
+        class="v-input v-input--has-state v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted success--text"
+      >
+        <div class="v-input__control">
+          <div class="v-input__slot">
+            <div class="v-text-field__slot">
+              <label
+                for="input-46"
+                class="v-label v-label--active theme--light success--text"
+                style="left: 0px; right: auto; position: absolute;"
+                >Amount Deleted (in GB)</label
+              ><input name="volume" id="input-46" type="number" /><div
+                class="v-text-field__suffix"
+              >
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <button type="submit" class="submit_button">Submit</button>
+        <label for="amount"> Beløb slettet i GB</label>
+        <div
+          data-v-7d0e8d10=""
+          class="v-input v-input--has-state v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted success--text"
+        >
+          <div class="v-input__control">
+            <div class="v-input__slot">
+              <div class="v-text-field__slot">
+                <label
+                  for="input-46"
+                  class="v-label v-label--active theme--light success--text"
+                  style="left: 0px; right: auto; position: absolute;"
+                  >Amount Deleted (in GB)</label
+                ><input name="volume" id="input-46" type="number" /><div
+                  class="v-text-field__suffix"
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit_button">Submit</button>
+      </div>
     </form>
   </div>
-</main>
 
-<style>
-  .wrapper-contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-auto-rows: auto;
-    padding: 2rem;
-    margin: auto;
-    max-width: 1000px;
-    gap: 10rem;
-  }
-
-  .contact-box {
-    background-color: #dddddd;
-    border-radius: 50px;
-    padding: 1.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    max-width: 60vh;
-    font-family: "Ubuntu", sans-serif;
-    background-color: #172815;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  label {
-    margin-bottom: 8px;
-    color: #9cb380;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #172815;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  button {
-    padding: 10px;
-    background-color: orange;
-    color: blanchedalmond;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-inline: auto;
-    display: block;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: "Lexend", sans-serif;
-  }
-
-  button:hover {
-    background-color: #baa0b0;
-  }
-
-  .submit_button {
-    margin-top: 2rem;
-  }
-
-  .contact-box h1 {
-    font-family: "Lexend", sans-serif;
-    color: #f8fab0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  .contact-box p {
-    font-family: "Ubuntu", sans-serif;
-    color: blanchedalmond;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-
-  .contact-information {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 5rem;
-    color: goldenrod;
-  }
-
-  .contact-information-h1 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Lexend", sans-serif;
-    font-size: 50px;
-    color: #5b5958;
-    /* width: 40ch; */
-    animation: colorChange 5s infinite linear;
-    transition: color 0.5s ease-in-out;
-  }
-  .contact-information-p p {
-    margin: auto;
-    color: #172815;
-    width: 40ch;
-    line-height: 2;
-    margin-bottom: 5rem;
-  }
-  @keyframes colorChange {
-    0% {
-      color: #536340;
+  <style>
+    .wrapper-contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-auto-rows: auto;
+      padding: 2rem;
+      margin: auto;
+      max-width: 1000px;
+      gap: 10rem;
     }
-    33% {
+
+    .contact-box {
+      background-color: #dddddd;
+      border-radius: 50px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      max-width: 60vh;
+      font-family: "Ubuntu", sans-serif;
+      background-color: #172815;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    label {
+      margin-bottom: 8px;
       color: #9cb380;
     }
-    66% {
-      color: #5b5958;
-    }
-    100% {
-      color: #536340;
-    }
-  }
 
-  .sign_up_page_main {
-    background-image: url(graphics/claudio-testa--SO3JtE3gZo-unsplash.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-  }
-</style>
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #172815;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      background-color: orange;
+      color: blanchedalmond;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-inline: auto;
+      display: block;
+      font-weight: bold;
+      font-size: 15px;
+      font-family: "Lexend", sans-serif;
+    }
+
+    button:hover {
+      background-color: #baa0b0;
+    }
+
+    .submit_button {
+      margin-top: 2rem;
+    }
+
+    .contact-box h1 {
+      font-family: "Lexend", sans-serif;
+      color: #f8fab0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .contact-box p {
+      font-family: "Ubuntu", sans-serif;
+      color: blanchedalmond;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact-information {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 5rem;
+      color: goldenrod;
+    }
+
+    .contact-information-h1 h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Lexend", sans-serif;
+      font-size: 50px;
+      color: #5b5958;
+      /* width: 40ch; */
+      animation: colorChange 5s infinite linear;
+      transition: color 0.5s ease-in-out;
+    }
+    .contact-information-p p {
+      margin: auto;
+      color: #172815;
+      width: 40ch;
+      line-height: 2;
+      margin-bottom: 5rem;
+    }
+    @keyframes colorChange {
+      0% {
+        color: #536340;
+      }
+      33% {
+        color: #9cb380;
+      }
+      66% {
+        color: #5b5958;
+      }
+      100% {
+        color: #536340;
+      }
+    }
+
+    .sign_up_page_main {
+      background-image: url(graphics/claudio-testa--SO3JtE3gZo-unsplash.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</main>
