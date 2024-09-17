@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Titel" />
@@ -8,17 +9,30 @@ import MainLayout from "../layouts/MainLayout.astro";
     <h1>Ressourcer</h1>
   </div>
   <div>
-    <p>link 1</p>
-    <p>link 2</p>
-    <p>link 3</p>
-    <p>link 4</p>
-    <p>link 5</p>
+    <li class="pt-40">
+      <a
+        href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view"
+        >Guidelines for individuals</a
+      >
+    </li>
+    <p>Guidelines for companies</p>
+    <p>Guidelines for schools Guidelines for municipalities</p>
+    <p>How to clean up your computer and Drive</p>
+    <p>How to clean up your emails</p>
+    <p>How to clean up your smartphone and tablet</p>
+    <p>Participant data collection 1</p>
+    <p>Participant data collection 2</p>
+    <p>Marketing materials</p>
   </div>
-
-  <style>
-    .grid-1-1 {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-    }
-  </style>
 </div>
+
+<style>
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  a {
+    list-style: none;
+  }
+</style>
