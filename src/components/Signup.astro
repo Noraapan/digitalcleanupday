@@ -1,5 +1,5 @@
 ---
-
+import Knap from "../components/Knap.astro";
 ---
 
 <main class="sign_up_page_main">
@@ -21,8 +21,7 @@
       <label for="Country">Land</label>
       <input type="text" id="School" name="School" placeholder="Denmark?" />
 
-      <label for="organization name">Organisationsnavn (valgfrit)</label>
-      <!-- Rettet label-tag -->
+      <label for="organization name">Organisationens navn</label>
       <input
         type="text"
         id="uni-login"
@@ -30,7 +29,6 @@
         placeholder=" GoGreen AS?"
       />
 
-      <label for="amount"> Antall deltagere</label>
       <div
         data-v-7d0e8d10=""
         class="v-input v-input--has-state v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted success--text"
@@ -41,8 +39,7 @@
               <label
                 for="input-46"
                 class="v-label v-label--active theme--light success--text"
-                style="left: 0px; right: auto; position: absolute;"
-                >Amount Deleted (in GB)</label
+                >Antall deltagere</label
               ><input name="volume" id="input-46" type="number" /><div
                 class="v-text-field__suffix"
               >
@@ -51,7 +48,6 @@
           </div>
         </div>
 
-        <label for="amount"> Beløb slettet i GB</label>
         <div
           data-v-7d0e8d10=""
           class="v-input v-input--has-state v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted success--text"
@@ -62,8 +58,7 @@
                 <label
                   for="input-46"
                   class="v-label v-label--active theme--light success--text"
-                  style="left: 0px; right: auto; position: absolute;"
-                  >Amount Deleted (in GB)</label
+                  >Beløb slettet i GB</label
                 ><input name="volume" id="input-46" type="number" /><div
                   class="v-text-field__suffix"
                 >
@@ -73,7 +68,7 @@
           </div>
         </div>
 
-        <button type="submit" class="submit_button">Submit</button>
+        <Knap variant="primary" size="medium">Registrer her!</Knap>
       </div>
     </form>
   </div>
