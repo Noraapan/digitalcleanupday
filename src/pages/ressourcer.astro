@@ -3,3 +3,22 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Titel" />
+<div class="grid-1-1">
+  <div>
+    <h1>Ressourcer</h1>
+  </div>
+  <div>
+    <p>link 1</p>
+    <p>link 2</p>
+    <p>link 3</p>
+    <p>link 4</p>
+    <p>link 5</p>
+  </div>
+
+  <style>
+    .grid-1-1 {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+  </style>
+</div>
