@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}", // Lägg till alla filtyper som du använder
-  ],
+  content: ["./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}"],
   theme: {
     extend: {
       colors: {
