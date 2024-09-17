@@ -1,0 +1,24 @@
+---
+const { variant = "primary", size = "medium" } = Astro.props;
+
+const buttonStyling = "uppercase group";
+
+const variantClasses = {
+  primary: "",
+  secondary: "",
+};
+
+const sizeClasses = {
+  large: "px-8 py-2 text-xl",
+  medium: "px-4 py-1 text-lg",
+  small: "px-2 py-0.5 text-sm",
+};
+---
+
+<a class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]} class="flex items-center gap-[6px]">
+  <span class="group-hover:font-bold group-hover:underline transition-all duration-300 ease-in-out">
+    <slot />
+  </span>
+
+  <img src="/public/arrow-down1.svg" alt="kalender " class="h-4 w-4" />
+</a>
