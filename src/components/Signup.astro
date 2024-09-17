@@ -1,0 +1,187 @@
+---
+
+---
+
+<main class="sign_up_page_main">
+  <div class="wrapper-contact">
+    <form class="Contact contact-box" name="Contact">
+      <h1>Sign up!</h1>
+      <p>Register your contribution!</p>
+
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Peter Parker, Bruce Wayne..."
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Maybe spiderman@email.com?"
+      />
+
+      <label for="School">School</label>
+      <input
+        type="text"
+        id="School"
+        name="School"
+        placeholder="i.e. Hogwarts!"
+      />
+
+      <label for="uni-login">Uni-Login</label>
+      <!-- Rettet label-tag -->
+      <input
+        type="text"
+        id="uni-login"
+        name="uni-login"
+        placeholder="i.e. Diba001 or Sar0003"
+      />
+
+      <label for="photo">Add a picture to personalize your account!</label>
+      <input
+        class="photo_upload_button"
+        type="file"
+        id="photo"
+        name="photo"
+        accept="image/*"
+      />
+
+      <button type="submit" class="submit_button">Submit</button>
+    </form>
+  </div>
+</main>
+
+<style>
+  .wrapper-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    padding: 2rem;
+    margin: auto;
+    max-width: 1000px;
+    gap: 10rem;
+  }
+
+  .contact-box {
+    background-color: #dddddd;
+    border-radius: 50px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 60vh;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #172815;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  label {
+    margin-bottom: 8px;
+    color: #9cb380;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #172815;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px;
+    background-color: orange;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-inline: auto;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Lexend", sans-serif;
+  }
+
+  button:hover {
+    background-color: #baa0b0;
+  }
+
+  .submit_button {
+    margin-top: 2rem;
+  }
+
+  .contact-box h1 {
+    font-family: "Lexend", sans-serif;
+    color: #f8fab0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .contact-box p {
+    font-family: "Ubuntu", sans-serif;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contact-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5rem;
+    color: goldenrod;
+  }
+
+  .contact-information-h1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lexend", sans-serif;
+    font-size: 50px;
+    color: #5b5958;
+    /* width: 40ch; */
+    animation: colorChange 5s infinite linear;
+    transition: color 0.5s ease-in-out;
+  }
+  .contact-information-p p {
+    margin: auto;
+    color: #172815;
+    width: 40ch;
+    line-height: 2;
+    margin-bottom: 5rem;
+  }
+  @keyframes colorChange {
+    0% {
+      color: #536340;
+    }
+    33% {
+      color: #9cb380;
+    }
+    66% {
+      color: #5b5958;
+    }
+    100% {
+      color: #536340;
+    }
+  }
+
+  .sign_up_page_main {
+    background-image: url(graphics/claudio-testa--SO3JtE3gZo-unsplash.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
+</style>
