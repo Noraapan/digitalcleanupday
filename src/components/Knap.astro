@@ -2,11 +2,11 @@
 
 const { variant= "primary", size = "medium" } = Astro.props; 
 
-const buttonStyling = "text-[var(--green)]"; 
+const buttonStyling = "text-green"; 
 
 const variantClasses = {
-    "primary": "bg-[var(--lightgreen)] text-[var(--green)] hover:bg-[var(--lightgreen] rounded-3xl",
-    "secondary": "bg-[var(--green)] hover:bg-[var(--green/75)] rounded-3xl text-[var(--lightgreen)]"
+    "primary": "bg-lightgreen text-green hover:bg-lightgreen/75 rounded-3xl",
+    "secondary": "bg-green hover:bg-green/75 rounded-3xl text-lightgreen"
 };
 
 
