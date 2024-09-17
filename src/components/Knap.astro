@@ -3,12 +3,12 @@
 const { variant= "primary", size = "medium" } = Astro.props; 
 
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
-const buttonStyling = "text-green"; 
+const buttonStyling = "text-[--(--green)]"; 
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 const variantClasses = {
-    "primary": "bg-lightgreen text-green hover:bg-lightgreen/75 rounded-3xl",
-    "secondary": "bg-green hover:bg-green/75 rounded-3xl text-lightgreen"
+    "primary": "bg-[--(--lightgreen)] text-[--(--green)] hover:bg-[--(--lightgreen/75)] rounded-3xl",
+    "secondary": "bg-[--(--green)] hover:bg-[--(--green/75)] rounded-3xl text-[--(--lightgreen)]"
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
