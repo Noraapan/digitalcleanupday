@@ -5,40 +5,47 @@ import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Sign Up Page">
-  <main>
-    <Signup />
-
-    <div class="contact-information">
-      <div class="contact-information-h1">
-        <h1>Registrer din digitale oprydning</h1>
-      </div>
-      <div class="contact-information-p">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non
-          ipsum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vivamus non ipsum ex.
-        </p>
-      </div>
+  <div class="contact-information">
+    <div class="contact-information-h1">
+      <h1>Registrer din digitale oprydning</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non
+        ipsum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus non ipsum ex.
+      </p>
     </div>
-  </main>
-</MainLayout>
+    <div>
+      <Signup />
+    </div>
+  </div>
 
-<style>
-  .contact-box h1 {
-    font-family: "Lexend", sans-serif;
-    color: #f8fab0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  .contact-box p {
-    font-family: "Ubuntu", sans-serif;
-    color: blanchedalmond;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-</style>
+  <style>
+    .contact-information {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+
+    .contact-box p {
+      font-family: "Ubuntu", sans-serif;
+      color: blanchedalmond;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact-box {
+      background-color: #dddddd;
+      border-radius: 50px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      max-width: 60vh;
+      font-family: "Ubuntu", sans-serif;
+      background-color: #172815;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+  </style>
+</MainLayout>
