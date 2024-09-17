@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Knap from "../components/Knap.astro";
+import KnapSave from "../components/KnapSave.astro";
 ---
 
 <MainLayout title="Titel">
@@ -9,7 +10,7 @@ import Knap from "../components/Knap.astro";
 <h3>15. MARTS 2025</h3>  
 <Knap variant="primary" size="medium">REGISTRER DIT BIDRAG!</Knap>
 <div class="flex flex-row justify-center pt-4">
-    <h4 class="pr-4">SAVE THE DATE</h4> <img src="kalender.svg" alt="kalender" class="hover:opacity-50">
+    <KnapSave variant="primary" size="medium">SAVE THE DATE</KnapSave>
 </div>
 </section>
 <article class="mx-5">
