@@ -1,5 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Knap from "../components/Knap.astro";
+import KnapSave from "../components/KnapSave.astro";
+import KnapDown from "../components/KnapDown.astro";
+import Steps from "../components/Steps.astro";
+("../components/Knap_save.astro");
 ---
 
 <MainLayout title="Titel">
@@ -29,6 +34,27 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
       </div>
     </div>
+
+    <div class="flex justify-start">
+      <KnapSave variant="primary" size="medium">save the date</KnapSave>
+      <KnapDown>guide</KnapDown>
+    </div>
+    <div class="flex justify-center">
+      <KnapDown>guide til smartphone</KnapDown>
+      <KnapDown>guide til computer</KnapDown>
+      <KnapDown>guide til indbakke</KnapDown>
+      <KnapDown>Nye arrangementer</KnapDown>
+    </div>
+
+    <div class="">
+      <Steps
+        overskrift="STEP 1"
+        underoverskrift="Ryd op på din smartphone"
+        paragraf="Fjern alle applikationer, som du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte, gamle apps og spil, som du har downloadet, men aldrig rigtig fået prøvet. Chancerne for, at du pludselig begynder at bruge dem senere, er ret små! De bruger energi, selv når de ikke er i brug, og kan forbruge hundreder af megabytes under månedlige opdateringer.Husk at slette eventuelle brugerkonti (inklusive e-mails) og tilknyttede data, som du oprettede, da du var 15 år, og som du ikke har tilgået i et årti eller mere! Du vil gøre din telefon hurtigere og forbedre batteriets levetid. Det er altid en fordel at have så få apps som nødvendigt.Gennemgå dine fotos og videoer. Ved at slette de unødvendige samt eventuelle dubletter kan du frigøre mange gigabyte værdifuld lagerplads. Se vejledningerne om, hvordan du rydder op på din smartphone og tablet."
+      >
+        <img src="/public/step1.svg" alt="pil ned" class="h-[auto] w-[auto] mt-[7rem]" />
+      </Steps>
+    </div>
   </article>
 
   <!--countdown -->
@@ -50,12 +76,9 @@ import MainLayout from "../layouts/MainLayout.astro";
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the days in the element with id="days"
+      // Display the result in the corresponding elements
       document.getElementById("days").innerHTML = days + "";
-
-      // Display the hours  in the element with id="time"
       document.getElementById("time").innerHTML = hours + "";
-      // Display the minut  in the element with id="minuts"
       document.getElementById("minutes").innerHTML = minutes + "";
       document.getElementById("seconds").innerHTML = seconds;
 
