@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/***** resert  */
+/********************************** Reset******************************/
 @layer base {
   * {
     margin: 0;
@@ -44,25 +44,103 @@
   h5,
   h6 {
     font-family: var(--font_header);
+    line-height: 1.2;
+  }
+  /* vi skal finde størrelser til mobil */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.45rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  p,
+  a,
+  li {
+    /* font-family: var(--font_body); */
+    line-height: 1.5;
+    font-weight: normal;
+  }
+  p {
+    font-size: var(--font_size_regular);
+  }
+  a {
+    cursor: pointer;
+    transition: all 0.55s ease;
+  }
+}
+
+/* ___________________________ TABLET  ___________________________*/
+/* reglerne gælder når skærmen er minimum 768px */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+  h4 {
+    font-size: 1.65rem;
+  }
+  h5 {
+    font-size: 1.3rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: var(--font_size_medium);
+  }
+}
+
+/* ___________________________ DESKTOP  ___________________________*/
+@media screen and (min-width: 1024px) {
+  section {
+    margin-inline: 40px;
+    padding-top: 90px;
   }
 
   h1 {
-    font-size: 57px;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
   }
   h2 {
-    font-size: 68px;
+    font-size: 3rem;
     font-weight: bold;
   }
   h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
   }
   h4 {
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: bold;
   }
-  p {
-    font-size: 20px;
+  h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
   }
 }
