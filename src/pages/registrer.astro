@@ -1,6 +1,21 @@
 ---
+import Signup from "../components/Signup.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/tailwind.css";
 ---
-<MainLayout title="Titel">
 
+<Signup />
+<MainLayout title="Sign Up Page">
+  <div class="contact-information">
+    <div class="bg-blue-500 text-black p-4">
+      <h1>Registrer din digitale oprydning</h1>
+    </div>
+    <div class="contact-information-p">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non
+        ipsum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus non ipsum ex.
+      </p>
+    </div>
+  </div>
 </MainLayout>
