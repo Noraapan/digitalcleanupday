@@ -6,48 +6,20 @@ import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Sign Up Page">
-  <div class="contact-information">
-    <div class="contact-information-h1">
-      <h1 class="p-12">Bli en del av endringen!</h1>
-      <p class="p-12">
+  <section class="grid md:grid-cols-2">
+    <div>
+      <h2>Bli en del av endringen!</h2>
+      <p class="py-4">
         Siden 2020 har 175 forskellige lande og territorier deltaget i Digital
         Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5
         millioner GB data, hvilket forhindrer den årlige produktion af omkring
         3.625 tons CO2*.
       </p>
     </div>
-    <div>
+    <div
+      class="order-last pt-14 mx-auto md:order-first md:pr-6 md:pt-44 md:pl-0 sm:pt-28 lg:pt-16"
+    >
       <Signup />
     </div>
-  </div>
-
-  <style>
-    .contact-information {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-    }
-
-    .contact-box p {
-      font-family: "Ubuntu", sans-serif;
-      color: blanchedalmond;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-    }
-
-    .contact-box {
-      background-color: #dddddd;
-      border-radius: 50px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: auto;
-      max-width: 60vh;
-      font-family: "Ubuntu", sans-serif;
-      background-color: #172815;
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-    }
-  </style>
+  </section>
 </MainLayout>

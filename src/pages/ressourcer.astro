@@ -4,11 +4,11 @@ import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Titel">
-  <div class="grid-1-1">
+  <section class="sm:grid grid-cols-2 lg:ml-28">
     <div>
-      <h1>Ressourcer</h1>
+      <h2>Ressourcer</h2>
     </div>
-    <div>
+    <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
       <ul class="pt-32 pb-20 font-semibold">
         <li class="p-5 hover:underline" "list-none">
           <a
@@ -65,12 +65,5 @@ import "../styles/tailwind.css";
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 </MainLayout>
-
-<style>
-  .grid-1-1 {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-  }
-</style>
