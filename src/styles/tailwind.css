@@ -10,10 +10,6 @@
     box-sizing: border-box;
   }
 
-  /* .will-change-transform {
-    will-change: transform;
-  } */
-
   body {
     will-change: background-position;
   }
