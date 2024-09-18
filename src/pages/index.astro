@@ -1,18 +1,21 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Knap from "../components/Knap.astro";
+import KnapSave from "../components/KnapSave.astro";
 ---
 
 <MainLayout title="Titel">
-<section class="text-center">
+<section class="text-center py-28">
 <h1>DIGITAL CLEANUP DAY</h1>
 <h3>15. MARTS 2025</h3>  
 <Knap variant="primary" size="medium">REGISTRER DIT BIDRAG!</Knap>
-<div class="flex flex-row justify-center pt-4">
-    <h4 class="pr-4">SAVE THE DATE</h4> <img src="kalender.svg" alt="kalender" class="hover:opacity-50">
+<div class="flex flex-row justify-center">
+    <KnapSave variant="primary" size="medium">SAVE THE DATE</KnapSave>
 </div>
 </section>
+
 <article class="mx-5">
+
     <section class="sm:grid grid-cols-2 lg:ml-28">
     <div>
             <h4>Hvad er</h4>
@@ -23,6 +26,7 @@ import Knap from "../components/Knap.astro";
     </div>
     <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0"><img src="people.svg" alt="people"></div>
     </section>
+
             <section class="text-center">
                 <h4 class="text-left">Hvorfor rydde op</h4>
                 <h2 class="text-left">I DET DIGITALE ROD?</h2>
@@ -49,15 +53,38 @@ import Knap from "../components/Knap.astro";
                     </div>
                 </div>
             </section>
-<section class="grid md:grid-cols-2 ">
-   <div class="order-last pt-14 pl-10 md:order-first md:pt-44 md:pl-0 sm:pt-28 lg:pt-16"><img src="mobiler.svg" alt="telefoner"></div>
+
+<section class="grid md:grid-cols-2">
+   <div class="order-last pt-14 pl-10 md:order-first md:pr-6 md:pt-44 md:pl-0 sm:pt-28 lg:pt-16"><img src="mobiler.svg" alt="telefoner"></div>
     <div>
         <h4>PROBLEMET</h4>
         <h2>MED DIGITALT SKRALD</h2>
         <p class="py-4">At udføre en digital oprydning er ikke kun en praktisk handling for at organisere dit digitale liv – det er også et skridt mod øget personlig effektivitet og en vigtig indsats for miljøet. Når du fjerner unødvendige data, bliver det lettere at håndtere og finde information, hvilket forbedrer dit arbejdsgang og sparer tid. Et velorganiseret digitalt miljø gør det også nemmere at dele information og reducerer stress over rod.</p>
         <p>Men digital oprydning er ikke kun godt for din egen produktivitet. Det har også en positiv indvirkning på miljøet. Opbevaring og overførsel af data kræver store mængder energi, hvilket fører til CO2-udslip. Ved at fjerne gammel og overflødig data kan du reducere behovet for energi og dermed hjælpe med at sænke de samlede udslip fra datacentre og servere.</p>
-    
-    </div></section>
+    </div>
+</section>
+
+<section>
+    <h2>DIGITAL CLEANUP DAY I TAL</h2>
+<div class="grid grid-cols-2 sm:flex flex-row justify-center">
+    <div class="px-5 flex flex-col items-center">
+            <img src="peeps.svg" alt="people" class="h-[70px] sm:h-auto">
+            <h3>1,184,747</h3>
+            <p>deltager</p>
+    </div>
+    <div class="px-5 flex flex-col items-center">
+        <img src="docs.svg" alt="dokumenter" class="h-[70px] sm:h-auto">
+        <h3>14.5 M GB</h3>
+        <p>data slettet</p>
+    </div>
+    <div class="px-5 flex flex-col items-center sm:w-[210px] md:w-[265px] lg:w-auto">
+        <img src="co2.svg" alt="CO2" class="h-[60px] sm:h-auto">
+        <h3>3,625 tons</h3>
+        <p class="text-center">af co2-production forhindret årligt</p>
+    </div>
+</div>
+</section>
+
 </article>
 
 </MainLayout>
