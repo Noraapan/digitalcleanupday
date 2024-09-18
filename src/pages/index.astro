@@ -5,13 +5,16 @@ import KnapSave from "../components/KnapSave.astro";
 ---
 
 <MainLayout title="Titel">
-<section class="text-center py-28">
-<h1>DIGITAL CLEANUP DAY</h1>
-<h3>15. MARTS 2025</h3>  
+<section class="fade-in text-center py-28">
+<div class="pb-14">
+    <h1>DIGITAL CLEANUP DAY</h1>
+    <h3>15. MARTS 2025</h3>  
+</div>
 <a href="registrer"><Knap variant="primary" size="medium">REGISTRER DIT BIDRAG!</Knap></a>
 <div class="flex flex-row justify-center">
     <KnapSave variant="primary" size="medium">SAVE THE DATE</KnapSave>
 </div>
+<img src="/arrow-down.svg" alt="pil ned" class="mx-auto pt-16">
 </section>
 
 <article class="mx-5">
@@ -25,7 +28,7 @@ import KnapSave from "../components/KnapSave.astro";
     </div>
     <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0"><img src="people.svg" alt="people"></div>
     </section>
-    <section class="text-center pb-40 md:pb-60">
+    <section class="fade-down text-center pb-40 md:pb-60">
         <h4 class="text-left">Hvorfor rydde op</h4>
         <h2 class="text-left pb-10">I DET DIGITALE ROD?</h2>
         <div class="grid grid-cols-2 lg:flex flex-row space-x-8">
@@ -62,7 +65,8 @@ import KnapSave from "../components/KnapSave.astro";
 </section>
 
 <section class="pb-40 md:pb-60">
-    <h2 class="pb-10">DIGITAL CLEANUP DAY I TAL</h2>
+    <h4>Tal fra</h4>
+    <h2 class="pb-10">DIGITAL CLEANUP DAY</h2>
 <div class="grid grid-cols-2 sm:flex flex-row justify-center md:space-x-28">
     <div class="flex flex-col items-center">
             <img src="peeps.svg" alt="people" class="h-[120px] sm:h-[140px]">
@@ -107,3 +111,6 @@ import KnapSave from "../components/KnapSave.astro";
 
 </MainLayout>
 
+<script>
+    import 'animate.css';
+</script>
