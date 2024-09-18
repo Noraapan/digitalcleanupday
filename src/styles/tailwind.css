@@ -90,10 +90,16 @@
     transition: all 0.55s ease;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
+
+  body {
+    padding-top: 30px;
+    margin: 10px;
+  }
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
+   
   }
 
   h2 {
@@ -119,6 +125,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    padding-top: 30px;
+    margin: 10px;
+  }
   h1 {
     font-size: 3.5rem;
   }
