@@ -5,87 +5,88 @@ import KnapSave from "../components/KnapSave.astro";
 ---
 
 <MainLayout title="Titel">
-<section class="text-center py-28">
-<h1>DIGITAL CLEANUP DAY</h1>
-<h3>15. MARTS 2025</h3>  
-<Knap variant="primary" size="medium">REGISTRER DIT BIDRAG!</Knap>
+<section class="fade-in text-center py-28">
+<div class="pb-14">
+    <h1>DIGITAL CLEANUP DAY</h1>
+    <h3>15. MARTS 2025</h3>  
+</div>
+<a href="registrer"><Knap variant="primary" size="medium">REGISTRER DIT BIDRAG!</Knap></a>
 <div class="flex flex-row justify-center">
     <KnapSave variant="primary" size="medium">SAVE THE DATE</KnapSave>
 </div>
+<img src="/arrow-down.svg" alt="pil ned" class="mx-auto pt-16">
 </section>
 
 <article class="mx-5">
-
-    <section class="sm:grid grid-cols-2 lg:ml-28">
+    <section class="pb-40 sm:grid grid-cols-2 lg:ml-28">
     <div>
             <h4>Hvad er</h4>
             <h2>DIGITALT SKRALD?</h2>
         <p class="py-4">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.</p>
         <p>Nu på sit femte år og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
-        <Knap class="p-16" variant="primary" size="medium">Læs mere</Knap>
+        <a href="#problemet"><Knap class="p-16" variant="primary" size="medium">Læs mere</Knap></a>
     </div>
     <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0"><img src="people.svg" alt="people"></div>
     </section>
-
-            <section class="text-center">
-                <h4 class="text-left">Hvorfor rydde op</h4>
-                <h2 class="text-left">I DET DIGITALE ROD?</h2>
-                <div class="grid grid-cols-2 lg:flex flex-row">
-                    <div class="p-3 flex flex-col items-center">
-                        <img src="money.svg" alt="pengar" class="w-[45%] lg:w-auto">
-                        <p>Øger serverkapaciteten og reducerer omkostninger</p>
-                    </div>
-                    <div class="p-3 flex flex-col items-center">
-                        <img src="share.svg" alt="dela" class="w-[45%] lg:w-auto">
-                        <p>Fremskynder deling og søgning af information</p>
-                    </div>
-                    <div class="p-3 flex flex-col items-center">
-                        <img src="lock.svg" alt="security" class="w-[45%] lg:w-auto">
-                        <p>Reducerer sikkerhedsrisici for datalagring</p>
-                    </div>
-                    <div class="p-3 flex flex-col items-center">
-                        <img src="devices.svg" alt="devices" class="w-[45%] lg:w-auto">
-                        <p>Forlænger dine enheders levetid</p>
-                    </div>
-                    <div class="p-3 flex flex-col items-center">
-                        <img src="co2.svg" alt="co2" class="w-[45%] lg:w-auto">
-                        <p>Hjælper med at reducere CO2-udledning</p>
-                    </div>
-                </div>
-            </section>
-
-<section class="grid md:grid-cols-2">
-   <div class="order-last pt-14 mx-auto md:order-first md:pr-6 md:pt-44 md:pl-0 sm:pt-28 lg:pt-16"><img src="mobiler.svg" alt="telefoner"></div>
+    <section class="fade-down text-center pb-40 md:pb-60">
+        <h4 class="text-left">Hvorfor rydde op</h4>
+        <h2 class="text-left pb-10">I DET DIGITALE ROD?</h2>
+        <div class="grid grid-cols-2 lg:flex flex-row space-x-8">
+            <div class="flex flex-col items-center">
+                <img src="money.svg" alt="pengar" class="w-[45%] lg:w-auto">
+                <p>Øger serverkapaciteten og reducerer omkostninger</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="share.svg" alt="dela" class="w-[45%] lg:w-auto">
+                <p>Fremskynder deling og søgning af information</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="lock.svg" alt="security" class="w-[45%] lg:w-auto">
+                <p>Reducerer sikkerhedsrisici for datalagring</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="devices.svg" alt="devices" class="w-[45%] lg:w-auto">
+                <p>Forlænger dine enheders levetid</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="co2.svg" alt="co2" class="w-[45%] lg:w-auto">
+                <p>Hjælper med at reducere CO2-udledning</p>
+            </div>
+        </div>
+    </section>
+<section id="problemet" class="pb-40 md:pb-60 grid md:grid-cols-2">
+   <div class="order-last mx-auto md:order-first md:pr-6 md:pt-44 md:pl-0 sm:pt-28 lg:pt-16"><img src="mobiler.svg" alt="telefoner"></div>
     <div>
-        <h4>PROBLEMET</h4>
+        <h4>Problemet</h4>
         <h2>MED DIGITALT SKRALD</h2>
         <p class="py-4">At udføre en digital oprydning er ikke kun en praktisk handling for at organisere dit digitale liv – det er også et skridt mod øget personlig effektivitet og en vigtig indsats for miljøet. Når du fjerner unødvendige data, bliver det lettere at håndtere og finde information, hvilket forbedrer dit arbejdsgang og sparer tid. Et velorganiseret digitalt miljø gør det også nemmere at dele information og reducerer stress over rod.</p>
         <p>Men digital oprydning er ikke kun godt for din egen produktivitet. Det har også en positiv indvirkning på miljøet. Opbevaring og overførsel af data kræver store mængder energi, hvilket fører til CO2-udslip. Ved at fjerne gammel og overflødig data kan du reducere behovet for energi og dermed hjælpe med at sænke de samlede udslip fra datacentre og servere.</p>
     </div>
 </section>
 
-<section>
-    <h2>DIGITAL CLEANUP DAY I TAL</h2>
-<div class="grid grid-cols-2 sm:flex flex-row justify-center">
-    <div class="px-5 flex flex-col items-center">
-            <img src="peeps.svg" alt="people" class="h-[70px] sm:h-auto">
+<section class="pb-40 md:pb-60">
+    <h4>Tal fra</h4>
+    <h2 class="pb-10">DIGITAL CLEANUP DAY</h2>
+<div class="grid grid-cols-2 sm:flex flex-row justify-center md:space-x-28">
+    <div class="flex flex-col items-center">
+            <img src="peeps.svg" alt="people" class="h-[120px] sm:h-[140px]">
             <h3>1,184,747</h3>
             <p>deltager</p>
     </div>
-    <div class="px-5 flex flex-col items-center">
-        <img src="docs.svg" alt="dokumenter" class="h-[70px] sm:h-auto">
+    <div class="flex flex-col items-center">
+        <img src="docs.svg" alt="dokumenter" class="h-[100px] sm:h-[140px]">
         <h3>14.5 M GB</h3>
         <p>data slettet</p>
     </div>
-    <div class="px-5 flex flex-col items-center sm:w-[210px] md:w-[265px] lg:w-auto">
-        <img src="co2.svg" alt="CO2" class="h-[60px] sm:h-auto">
-        <h3>3,625 tons</h3>
+    <div class="flex flex-col items-center sm:w-[210px] md:w-[265px] lg:w-auto">
+        <img src="co2.svg" alt="CO2" class="h-[80px] sm:h-auto sm:pt-4">
+        <h3 class="pt-4">3,625 tons</h3>
         <p class="text-center">af co2-production forhindret årligt</p>
     </div>
 </div>
 </section>
 
-<section class="md:grid grid-cols-2">
+<section class="md:grid grid-cols-2 md:pb-40">
 <div>
         <h2 class="pb-10">VIDSTE DU?</h2>
         <ul class="list-disc px-7 space-y-2 lg:pl-15 lg:space-y-4">
@@ -110,3 +111,6 @@ import KnapSave from "../components/KnapSave.astro";
 
 </MainLayout>
 
+<script>
+    import 'animate.css';
+</script>
