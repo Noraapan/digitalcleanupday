@@ -124,8 +124,9 @@
   h2 {
     font-size: 3rem;
     font-weight: bold;
+
     h3 {
-      font-size: 2.3rem;
+      font-size: 1.8rem;
     }
     h4 {
       font-size: 2rem;
@@ -134,32 +135,4 @@
       font-size: 1.7rem;
     }
   }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .fade-in {
-    animation: fadeIn 1.5s ease-in-out;
-  }
-
-  /*
-  @keyframes fadeDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px); 
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);  
-    }
-  }
-  .fade-down {
-    animation: fadeDown 2s ease-in-out;
-  }
-  */
 }
