@@ -10,10 +10,6 @@
     box-sizing: border-box;
   }
 
-  body {
-    will-change: background-position;
-  }
-
   :root {
     /* --font_body: "Roboto", sans-serif; */
     --font_header: Helvetica, sans-serif;
