@@ -7,9 +7,6 @@ import "../styles/tailwind.css";
   <h2 class="m-20 fade-in">Ressourcer</h2>
   <section class="sm:grid grid-cols-2 lg:ml-28 load">
     <div>
-      <img src="papir.svg" alt="CO2, legg inn papir her" />
-    </div>
-    <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
       <ul class="pt-32 pb-20 font-semibold">
         <li class="p-5 hover:underline" "list-none">
           <a
@@ -66,17 +63,19 @@ import "../styles/tailwind.css";
         </li>
       </ul>
     </div>
+    <div class="pl-10 sm:pt-28 lg:pt-40 lg:pl-0">
+      <img src="papir.svg" alt="CO2, legg inn papir her" />
+    </div>
   </section>
 </MainLayout>
 <script>
   import { inView } from "motion";
-  
+
   const inviewelements = document.querySelectorAll(".load");
-  
+
   inviewelements.forEach((element) => {
     inView(element, () => {
       element.classList.add("slide-top");
     });
   });
-  
-  </script>
+</script>
