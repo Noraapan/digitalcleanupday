@@ -4,8 +4,8 @@ import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Titel">
-  <h2 class="m-20">Ressourcer</h2>
-  <section class="sm:grid grid-cols-2 lg:ml-28">
+  <h2 class="m-20 fade-in">Ressourcer</h2>
+  <section class="sm:grid grid-cols-2 lg:ml-28 load">
     <div>
       <img src="papir.svg" alt="CO2, legg inn papir her" />
     </div>
@@ -68,3 +68,15 @@ import "../styles/tailwind.css";
     </div>
   </section>
 </MainLayout>
+<script>
+  import { inView } from "motion";
+  
+  const inviewelements = document.querySelectorAll(".load");
+  
+  inviewelements.forEach((element) => {
+    inView(element, () => {
+      element.classList.add("slide-top");
+    });
+  });
+  
+  </script>
