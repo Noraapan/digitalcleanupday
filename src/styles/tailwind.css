@@ -9,14 +9,6 @@
     box-sizing: border-box;
   }
 
-  /* .will-change-transform {
-    will-change: transform;
-  } */
-
-  body {
-    will-change: background-position;
-  }
-
   :root {
     /* --font_body: "Roboto", sans-serif; */
     --font_header: Helvetica, sans-serif;
