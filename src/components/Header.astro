@@ -1,40 +1,28 @@
 ---
 
 ---
-
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full z-10">
-  <div id="navbar" class="flex flex-row justify-between">
-    <div id="logo" class="">
-      <a href="/">
-        <img src="logo.svg" alt="logo" />
-      </a>
-    </div>
-    <nav id="desktopmenu" class="pr-4 hidden lg:block">
-      <ul class="flex flex-row gap-4">
-        <li class=""><a href="registrer">REGISTRER</a></li>
-        <li class=""><a href="ressourcer">RESSOURCER</a></li>
-        <li class=""><a href="howto">HOW TO</a></li>
-      </ul>
-    </nav>
-    <button
-      id="burgermenu"
-      class="pr-3 lg:hidden"
-      x-on:click="showmenu = ! showmenu">Menu</button
-    >
-  </div>
-  <nav
-    id="mobilmenu"
-    class="flex flex-col content-center py-4"
-    class="fixed right-8 flex flex-col content-center"
-    x-show="showmenu"
-    x-transition
-    x-on:click="showmenu = false"
-    x-on:click.outside="showmenu = false"
-  >
-    <ul>
-      <li class=""><a href="registrer">REGISTRER</a></li>
-      <li class=""><a href="ressourcer">RESSOURCER</a></li>
-      <li class=""><a href="howto">HOW TO</a></li>
-    </ul>
-  </nav>
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full z-10" >
+<div id="navbar" class="flex flex-row justify-between">
+<div id="logo">
+  <a href="/">
+    <img src="logo.svg" alt="logo" />
+  </a>
+</div>
+<nav id="desktopmenu" class="hidden lg:block">
+<ul class="flex flex-row gap-4">
+<li class="registrer">REGISTRER<a href=""></a></li>
+<li class="ressourcer">RESSOURCER<a href=""></a></li>
+<li class="howto">HOW TO<a href=""></a></li>
+</ul>
+</nav>
+<button id="burgermenu" class="pr-4 lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
+</div>
+<nav id="mobilmenu" class="fixed right-8 flex flex-col content-center pt-4" 
+x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+<ul >
+  <li class="registrer">REGISTRER<a href=""></a></li>
+  <li class="ressourcer">RESSOURCER<a href=""></a></li>
+  <li class="howto">HOW TO<a href=""></a></li>
+</ul>
+</nav>
 </div>
