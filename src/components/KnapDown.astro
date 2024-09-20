@@ -1,5 +1,5 @@
 ---
-const { variant = "primary", size = "medium" } = Astro.props;
+const { variant = "primary", size = "medium", href = "#" } = Astro.props;
 
 const buttonStyling = "uppercase group";
 
@@ -15,10 +15,10 @@ const sizeClasses = {
 };
 ---
 
-<a class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]} class="flex items-center gap-[6px]">
-  <span class="group-hover:font-bold group-hover:underline transition-all duration-300 ease-in-out">
+<a href={href} class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]} class="flex items-center gap-[6px]">
+  <span class="group-hover:font-bold hover:bg-darkgreen hover:text-darkgreen group-hover:underline transition-all duration-300 ease-in-out text-darkgreen flex">
     <slot />
   </span>
 
-  <img src="/arrow-down1.svg" alt="kalender'" class="h-4 w-4" />
+  <!-- <img src="/arrow-down1.svg" alt="kalender'" class="h-8 w-8 object-contain" /> -->
 </a>

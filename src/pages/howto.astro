@@ -11,16 +11,11 @@ import StepRight from "../components/StepRight.astro";
 <MainLayout title="Titel">
   <article>
     <div class="fade-in">
-      <h1 class="text-left pb-[1rem] pt-[4rem]">
-        SÅDAN LAVER DU EN DIGITAL <br />OPRYDNING
-      </h1>
+      <h1 class="text-center pb-4 pt-[8rem] px-12 md:pt-[8 rem] md:text-left lg:text-left lg:pb-[1rem] lg:pt-[1rem] lg:max-w-[33ch]">SÅDAN LAVER DU EN DIGITAL OPRYDNING</h1>
 
-      <h5 class="max-w-[33ch] pt-[17px]">
-        Brug vores guide, til at være med til at gøre en forskel til digital
-        clean up day
-      </h5>
+      <h5 class="px-12 lg:max-w-[33ch] pt-[17px] text-darkgreen">Brug vores guide, til at være med til at gøre en forskel til digital clean up day</h5>
       <!-- countdown -->
-      <div class="pt-11">
+      <div class="pt-11 pb-4 px-12">
         <h1 id="countdown"></h1>
         <div id="klocka" class="flex gap-x-8">
           <div class="text-center">
@@ -42,69 +37,41 @@ import StepRight from "../components/StepRight.astro";
         </div>
       </div>
 
-      <div class="flex justify-start py-[12px]">
+      <div class="px-12 flex justify-start py-[12px] lg:gap-16">
         <KnapSave variant="primary" size="medium">save the date</KnapSave>
-        <KnapDown>guide</KnapDown>
+        <KnapDown href="#goto">guide <img src="/arrow-down.svg" alt="kalender'" class="h-7 w-7 object-contain" /></KnapDown>
       </div>
-      <div class="flex justify-center py-12">
-        <KnapDown>guide til smartphone</KnapDown>
-        <KnapDown>guide til computer</KnapDown>
-        <KnapDown>guide til indbakke</KnapDown>
-        <KnapDown>Nye arrangementer</KnapDown>
+      <div class="hidden md:flex md:justify-center md:py-12 md:pb-11 lg:flex lg:justify-center lg:py-12 lg:pb-11" id="goto">
+        <KnapDown href="#trin1">guide til smartphone <img src="/arrow-down1.svg" alt="kalender'" class="h-8 w-8 object-contain" /></KnapDown>
+        <KnapDown href="#trin2">guide til <img src="/arrow-down1.svg" alt="kalender'" class="h-8 w-8 object-contain" /></KnapDown>
+        <KnapDown href="#trin3">guide til indbakke <img src="/arrow-down1.svg" alt="kalender'" class="h-8 w-8 object-contain" /></KnapDown>
+        <KnapDown href="#trin4">Nye arrangementer <img src="/arrow-down1.svg" alt="kalender'" class="h-8 w-8 object-contain" /></KnapDown>
       </div>
     </div>
 
-    <div class="load">
+    <div class="load pt-20" id="trin1">
       <Steps
         overskrift="TRIN 1"
         underoverskrift="Ryd op på din smartphone"
         paragraf="Fjern alle applikationer, som du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte, gamle apps og spil, som du har downloadet, men aldrig rigtig fået prøvet. Chancerne for, at du pludselig begynder at bruge dem senere, er ret små! De bruger energi, selv når de ikke er i brug, og kan forbruge hundreder af megabytes under månedlige opdateringer.Husk at slette eventuelle brugerkonti (inklusive e-mails) og tilknyttede data, som du oprettede, da du var 15 år, og som du ikke har tilgået i et årti eller mere! Du vil gøre din telefon hurtigere og forbedre batteriets levetid. Det er altid en fordel at have så få apps som nødvendigt.Gennemgå dine fotos og videoer. Ved at slette de unødvendige samt eventuelle dubletter kan du frigøre mange gigabyte værdifuld lagerplads. Se vejledningerne om, hvordan du rydder op på din smartphone og tablet."
       >
-        <img
-          src="/step1.svg"
-          alt="pil ned"
-          class="h-[auto] w-[auto] mt-[7rem]"
-        />
+        <img src="/storage.svg" alt="pil ned" class="h-[auto] w-[auto] mt-[7rem]" />
       </Steps>
     </div>
-    <div class="load">
-      <StepRight
-        overskrift="TRIN 2"
-        underoverskrift="Ryd op på din computers harddisk"
-        paragraf="Gennemgå din personlige computer og slet filer, der er dubletter eller er blevet unødvendige. Gå igennem alle dine fotos og slet dubletter samt slørede billeder. Tjek dine videofiler og slet de videoer, du har set, eller som ikke længere er nødvendige. Arkiver de vigtige filer. Vær forberedt på at finde nogle virkelig fantastiske ting på din computer! Se vejledningerne om, hvordan du rydder op på din computer og harddisk."
-      >
-        <img
-          src="/computer.svg"
-          alt="pil ned"
-          class="h-[auto] w-[auto] mt-[7rem]"
-        />
+    <div class="load" id="trin2">
+      <StepRight overskrift="TRIN 2" underoverskrift="Ryd op på din computers harddisk" paragraf="Gennemgå din personlige computer og slet filer, der er dubletter eller er blevet unødvendige. Gå igennem alle dine fotos og slet dubletter samt slørede billeder. Tjek dine videofiler og slet de videoer, du har set, eller som ikke længere er nødvendige. Arkiver de vigtige filer. Vær forberedt på at finde nogle virkelig fantastiske ting på din computer! Se vejledningerne om, hvordan du rydder op på din computer og harddisk.">
+        <img src="/computer.svg" alt="pil ned" class="h-[auto] w-[auto] mt-[7rem]" />
       </StepRight>
     </div>
-    <div class="load">
-      <Steps
-        overskrift="TRIN 3"
-        underoverskrift="Ryd op i din indbakke"
-        paragraf="Sorter dine e-mails efter de ældste, og arkiver dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste og slet resten! Søg efter almindelige navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem i større mængder. Vær modig og klik på slet-knappen. Se vejledningerne om, hvordan du rydder op i din indbakke"
-      >
-        <img
-          src="/mails.svg"
-          alt="pil ned"
-          class="h-[auto] w-[auto] mt-[7rem]"
-        />
+    <div class="load" id="trin3">
+      <Steps overskrift="TRIN 3" underoverskrift="Ryd op i din indbakke" paragraf="Sorter dine e-mails efter de ældste, og arkiver dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste og slet resten! Søg efter almindelige navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem i større mængder. Vær modig og klik på slet-knappen. Se vejledningerne om, hvordan du rydder op i din indbakke">
+        <img src="/mails.svg" alt="pil ned" class="h-[auto] w-[auto] mt-[7rem]" />
       </Steps>
     </div>
-    <div class="load">
-      <StepRight
-        overskrift="TRIN 4"
-        underoverskrift="Lav nye arrangementer"
-        paragraf="Istedet for at sende e-mails, brug flere co-working steder. Stop med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer et sted i skyen, så der ikke er behov for at gemme den samme fil på hver computer. Tænk først, før du tager backup. Skab mindre 'hurtigt indhold' og vær mere bevidst om dine videoer og fotos. Sørg for kun at tage backup af de filer, du virkelig har brug for, og kun de billeder, du elsker. Små ændringer i dine internetvaner, såsom at slukke for videoen under et virtuelt møde, reducere kvaliteten på streamingtjenester, nedsætte spilletid, begrænse tid på sociale medier og afmelde nyhedsbreve og e-mail-lister, kan markant reducere dit miljøaftryk."
-      >
-        <img
-          src="/step1.svg"
-          alt="pil ned"
-          class="h-[auto] w-[auto] mt-[7rem]"
-        />
-      </StepRight>
+    <div class="load md:flex md:flex-col md:items-center md:text-center lg:flex lg:flex-col lg:items-center lg:text-center px-12 pt-20" id="trin4">
+      <h3>TRIN 4</h3>
+      <h5 class="text-mediumgreen font-bold">Lav nye arrangementer</h5>
+      <p class="md:mt-4 md:max-w-prose md:px-4 lg:mt-4 lg:max-w-prose lg:px-4">Istedet for at sende e-mails, brug flere co-working steder. Stop med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer et sted i skyen, så der ikke er behov for at gemme den samme fil på hver computer. Tænk først, før du tager backup. Skab mindre 'hurtigt indhold' og vær mere bevidst om dine videoer og fotos. Sørg for kun at tage backup af de filer, du virkelig har brug for, og kun de billeder, du elsker. Små ændringer i dine internetvaner, såsom at slukke for videoen under et virtuelt møde, reducere kvaliteten på streamingtjenester, nedsætte spilletid, begrænse tid på sociale medier og afmelde nyhedsbreve og e-mail-lister, kan markant reducere dit miljøaftryk.</p>
     </div>
   </article>
 
@@ -124,9 +91,7 @@ import StepRight from "../components/StepRight.astro";
 
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
@@ -146,12 +111,41 @@ import StepRight from "../components/StepRight.astro";
       }
     }, 1000);
 
+    // import { inView } from "motion";
+    // const inviewelements = document.querySelectorAll(".load");
+
+    // inviewelements.forEach((element) => {
+    //   inView(element, () => {
+    //     element.classList.add("slide-top");
+    //   });
+    // });
+
+    // ****animation****//
+
     import { inView } from "motion";
+
     const inviewelements = document.querySelectorAll(".load");
 
     inviewelements.forEach((element) => {
       inView(element, () => {
         element.classList.add("slide-top");
+        element.classList.remove("load"); // Tillad klik på elementet nu
+      });
+    });
+
+    // Opdater klik event listener
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          // Scroll til elementet
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
       });
     });
   </script>

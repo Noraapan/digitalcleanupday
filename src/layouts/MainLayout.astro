@@ -16,17 +16,15 @@ const { title } = Astro.props;
   </head>
 
   <body class="bg-[url('/gradient.avif')] bg-cover bg-center h-full w-full will-change-transform scroll-smooth bg-fixed">
-    <body class="bg-[url('/gradient.avif')] bg-cover bg-center h-full w-full scroll-smooth">
-      <header>
-        <Header />
-      </header>
+    <header>
+      <Header />
+    </header>
 
-      <main class="max-w-screen-xl mx-auto">
-        <slot />
-      </main>
-    </body>
-    <footer>
-      <Footer />
-    </footer>
+    <main class="max-w-screen-xl mx-auto">
+      <slot />
+    </main>
   </body>
+  <footer>
+    <Footer />
+  </footer>
 </html>
